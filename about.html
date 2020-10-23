@@ -48,11 +48,22 @@
         </div>
       </section>
       <!-- TODO: FIGURE OUT WHY THE MOBILE IMAGE ONLY SHOWS UP ON 187PX INSTEAD OF 375PX-->
-      <img src="./assets/about/mobile/image-team-members.jpg" 
+      <!-- <img 
+      style="max-width: 100%;"
+      srcset="assets/about/mobile/image-team-members.jpg 375w,
+              assets/about/tablet/image-team-members.jpg 769w,
+              assets/about/desktop/image-team-members.jpg 1440w"
+      src="assets/about/mobile/image-team-members.jpg"
       alt="payapi team members." 
-      srcset="./assets/about/desktop/image-team-members.jpg 1440w, 
-      ./assets/about/tablet/image-team-members.jpg 769w, 
-      ./assets/about/mobile/image-team-members.jpg 375w">
+      > -->
+      <picture>
+        <source media="(max-width: 375px)" srcset="./assets/about/mobile/image-team-members.jpg">
+        <source media="(max-width: 770px)" srcset="./assets/about/tablet/image-team-members.jpg">
+          <source media="(min-width: 1440px)" srcset="./assets/about/desktop/image-team-members.jpg">
+        <img style="max-width: 100%;"
+        src="./assets/about/desktop/image-team-members.jpg" 
+        alt="payapi team members.">
+      </picture>
     </main>
     
     
