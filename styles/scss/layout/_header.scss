@@ -3,4 +3,5 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @include margin(40px, 24px, 30.5px, 24px);
 }
