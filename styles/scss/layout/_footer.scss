@@ -1,0 +1,50 @@
+footer {
+    background-color: $MirageBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url('../assets/shared/desktop/bg-pattern-circle.svg');
+        background-position: top center;
+        position: absolute;
+        top: 200px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .payapi-footer-logo {
+        @include margin(41px, 120px, null, 120px);
+        g {fill: $LinkWaterWhite;
+        }
+    }
+    nav {
+        z-index: 1;
+        @include margin(38.5px, 159px, 42px, 159px);
+        li {
+            text-align: center;
+            &:nth-child(2) {
+                @include padding(32px, null, 32px, null);
+            }
+            a {
+                font-family: $PublicSans;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 15px;
+                color: $LinkWaterWhite;
+                opacity: 0.7;
+            }
+        }
+    }  
+    .social-media-icons {
+        z-index: 1;
+        @include margin(null, null, 55px, null);
+        svg {
+            &:nth-child(2) {
+                @include padding(null, 24px, null, 24px);
+            }
+        }
+    }
+}
