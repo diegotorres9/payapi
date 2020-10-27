@@ -1,0 +1,36 @@
+.ready-to-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include margin(80px, 24px, 80px, 24px);
+    h2 {
+        font-family: $DmSerifDisplay;
+        font-size: 32px;
+        color: $SanJuanBlue;
+        margin-bottom: 32px;
+    }
+    input {
+        @include margin(null, 24px, 16px, 24px);
+        @include padding(14px, null, 17px, 27px);
+        border-radius: 24px;
+        border: none;
+        width: 327px;
+        font-family: $PublicSans;
+        font-weight: bold;
+        font-size: 15px;
+        color: $SanJuanBlue;
+        box-shadow: 10px 10px 25px rgba($SanJuanBlue, .25);
+    }
+    button {
+        border: none;
+        border-radius: 24px;
+        background-color: $DarkPink;
+        color: $LinkWaterWhite;
+        @include padding(16px, 46px, 15px, 50px);
+        width: 327px;
+        font-size: 15px;
+        font-family: $PublicSans;
+        font-weight: bold;
+    }
+}
