@@ -1,0 +1,93 @@
+.implement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include margin(91px, 24px, null, 24px);
+    img {
+        max-width: 100%;
+        transform: translate(15px, 15px);
+    }
+    .implement-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 32px;
+            color: $SanJuanBlue;
+            font-family: $DmSerifDisplay;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 15px;
+            font-family: $PublicSans;
+            line-height: 28px;
+            color: $LightSanJuanBlue;
+            text-align: center;
+        }
+    }
+}
+.simple-ui-ux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include margin(91px, 24px, null, 24px);
+    img {
+        max-width: 100%;
+        transform: translate(10px, 10px);
+    }
+    .ui-ux-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 32px;
+            color: $SanJuanBlue;
+            font-family: $DmSerifDisplay;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 15px;
+            font-family: $PublicSans;
+            line-height: 28px;
+            color: $LightSanJuanBlue;
+            text-align: center;
+        }
+    }
+}
+.benefits-grid {
+    @include margin(80px, 24px, 80px, 24px);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(2) {
+            @include margin(48px, null, 48px, null);
+        }
+        img {
+            margin-bottom: 33px;
+        }
+        .item-heading {
+            font-family: $PublicSans;
+            font-size: 18px;
+            font-weight: bold;
+            color: $SanJuanBlue;
+            margin-bottom: 16px;
+        }
+        .item-p {
+            font-family: $PublicSans;
+            font-size: 15px;
+            color: $LightSanJuanBlue;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+}

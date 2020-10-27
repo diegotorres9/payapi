@@ -176,4 +176,108 @@ footer .social-media-icons svg:nth-child(2) {
   font-weight: bold;
 }
 
+.implement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 91px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.implement img {
+  max-width: 100%;
+  transform: translate(15px, 15px);
+}
+.implement .implement-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.implement .implement-copy h2 {
+  font-size: 32px;
+  color: #37546d;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 24px;
+}
+.implement .implement-copy p {
+  font-size: 15px;
+  font-family: "Public Sans", sans-serif;
+  line-height: 28px;
+  color: #6b8294;
+  text-align: center;
+}
+
+.simple-ui-ux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 91px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.simple-ui-ux img {
+  max-width: 100%;
+  transform: translate(10px, 10px);
+}
+.simple-ui-ux .ui-ux-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.simple-ui-ux .ui-ux-copy h2 {
+  font-size: 32px;
+  color: #37546d;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 24px;
+}
+.simple-ui-ux .ui-ux-copy p {
+  font-size: 15px;
+  font-family: "Public Sans", sans-serif;
+  line-height: 28px;
+  color: #6b8294;
+  text-align: center;
+}
+
+.benefits-grid {
+  margin-top: 80px;
+  margin-right: 24px;
+  margin-bottom: 80px;
+  margin-left: 24px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.benefits-grid .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-grid .grid-item:nth-child(2) {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.benefits-grid .grid-item img {
+  margin-bottom: 33px;
+}
+.benefits-grid .grid-item .item-heading {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #37546d;
+  margin-bottom: 16px;
+}
+.benefits-grid .grid-item .item-p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  color: #6b8294;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
