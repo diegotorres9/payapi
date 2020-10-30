@@ -1,3 +1,53 @@
+.who-we-work-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $MirageBlue;
+    .who-we-work-with-logos {
+        @include margin(80px, null, 56px, null);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        svg {
+            &:nth-child(3) {
+                margin: 40px 0;
+            }
+            &:nth-child(4) {
+                margin: 40px 0;
+            }
+            &:nth-child(even) {
+                margin-left: 51px;
+                margin-right: 48px;
+            }
+            &:nth-child(odd) {
+                margin-left: 48px;
+            }
+            path {
+                fill: $LinkWaterWhite;
+            }
+        }
+    }
+    .who-we-work-with-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-family: $DmSerifDisplay;
+            font-size: 32px;
+            color: $LinkWaterWhite;
+        }
+        p {
+            font-family: $PublicSans;
+            font-size: 15px;
+            text-align: center;
+            line-height: 28px;
+            color: $LinkWaterWhite;
+            opacity: 0.7;
+            @include margin(16px, null, 32px, null);
+         }
+    }
+}
 .implement {
     display: flex;
     flex-direction: column;
@@ -5,8 +55,8 @@
     justify-content: center;
     @include margin(91px, 24px, null, 24px);
     img {
-        max-width: 100%;
-        transform: translate(15px, 15px);
+        width: 441.75px;
+        transform: translate(18px, 15px);
     }
     .implement-copy {
         display: flex;
@@ -35,8 +85,8 @@
     justify-content: center;
     @include margin(91px, 24px, null, 24px);
     img {
-        max-width: 100%;
-        transform: translate(10px, 10px);
+        width: 418.5px;
+        transform: translate(15px, 10px);
     }
     .ui-ux-copy {
         display: flex;
